@@ -1,0 +1,176 @@
+export default function YardCoWaitingListLandingPage() {
+  return (
+    <div className="min-h-screen bg-[#F5F6F7] text-[#1F1F1F] font-sans">
+      <section className="relative overflow-hidden bg-white">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#DFF3EA] via-white to-[#F5F6F7]" />
+        <div className="relative mx-auto max-w-6xl px-6 py-20 md:py-28">
+          <div className="grid items-center gap-12 md:grid-cols-2">
+            <div>
+              <div className="mb-4 inline-flex items-center rounded-full bg-[#DFF3EA] px-4 py-2 text-sm font-medium text-[#0F6B4B]">
+                Founding Seller Waiting List
+              </div>
+              <h1 className="mb-6 text-4xl font-bold tracking-tight text-[#083F2B] md:text-6xl">
+                Sell online or in-store with YardCo Store.
+              </h1>
+              <p className="mb-8 max-w-xl text-lg leading-8 text-[#4A4A4A]">
+                Join the first group of sellers on YardCo Store and get early access, lower processing fees for a limited time, and the chance to grow your products through our website, app, and physical store.
+              </p>
+              <div className="flex flex-col gap-4 sm:flex-row">
+                <a
+                  href="#waitlist"
+                  className="rounded-2xl bg-[#0F6B4B] px-6 py-4 text-center text-base font-semibold text-white shadow-lg transition hover:opacity-95"
+                >
+                  Join the Waiting List
+                </a>
+                <a
+                  href="#how-it-works"
+                  className="rounded-2xl border border-[#0F6B4B] px-6 py-4 text-center text-base font-semibold text-[#0F6B4B] transition hover:bg-[#DFF3EA]"
+                >
+                  See How It Works
+                </a>
+              </div>
+              <div className="mt-8 flex flex-wrap gap-6 text-sm text-[#4A4A4A]">
+                <span>✓ Early access</span>
+                <span>✓ Lower launch fees</span>
+                <span>✓ Online + physical store exposure</span>
+              </div>
+            </div>
+
+            <div className="rounded-[2rem] bg-white p-6 shadow-2xl ring-1 ring-black/5">
+              <div className="rounded-[1.5rem] bg-[#F5F6F7] p-6">
+                <h2 className="mb-4 text-2xl font-bold text-[#083F2B]">Why sellers are joining early</h2>
+                <div className="space-y-4">
+                  {[
+                    {
+                      title: 'Lower processing fees',
+                      body: 'Founding sellers get a discounted processing fee for a limited launch period.',
+                    },
+                    {
+                      title: 'Open your own store',
+                      body: 'Create your own seller presence on the YardCo website and app.',
+                    },
+                    {
+                      title: 'Physical store option',
+                      body: 'Products can also be sold through the YardCo physical store for added exposure.',
+                    },
+                    {
+                      title: 'Built-in trust',
+                      body: 'YardCo verifies products, handles quality checks, packaging, and customer trust.',
+                    },
+                  ].map((item) => (
+                    <div key={item.title} className="rounded-2xl bg-white p-4 shadow-sm">
+                      <h3 className="font-semibold text-[#0F6B4B]">{item.title}</h3>
+                      <p className="mt-1 text-sm leading-6 text-[#4A4A4A]">{item.body}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works" className="mx-auto max-w-6xl px-6 py-16">
+        <div className="mb-10 max-w-2xl">
+          <h2 className="text-3xl font-bold text-[#083F2B] md:text-4xl">How YardCo Store works</h2>
+          <p className="mt-4 text-lg text-[#4A4A4A]">
+            YardCo Store helps people, small businesses, and creators sell second-hand and handmade products in a more trusted way.
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-4">
+          {[
+            ['1', 'List your products', 'Create your seller profile and add your items.'],
+            ['2', 'Send to YardCo', 'Send products to the hub or bring them to the physical store.'],
+            ['3', 'We verify & display', 'We quality-check, package, and prepare items for sale.'],
+            ['4', 'You sell with trust', 'Your items can be sold online, in the app, and in-store.'],
+          ].map(([num, title, body]) => (
+            <div key={num} className="rounded-[1.5rem] bg-white p-6 shadow-md ring-1 ring-black/5">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#DFF3EA] text-lg font-bold text-[#0F6B4B]">
+                {num}
+              </div>
+              <h3 className="text-xl font-semibold text-[#083F2B]">{title}</h3>
+              <p className="mt-3 text-sm leading-6 text-[#4A4A4A]">{body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-white py-16">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="grid gap-8 md:grid-cols-2">
+            <div className="rounded-[2rem] bg-[#083F2B] p-8 text-white shadow-xl">
+              <h2 className="text-3xl font-bold">Who this is for</h2>
+              <div className="mt-6 space-y-4 text-white/90">
+                <p>• People selling second-hand goods</p>
+                <p>• Small businesses with stock to sell</p>
+                <p>• Handmade product creators and local artists</p>
+                <p>• Sellers who want online and physical store exposure</p>
+              </div>
+            </div>
+
+            <div className="rounded-[2rem] bg-[#DFF3EA] p-8 shadow-xl">
+              <h2 className="text-3xl font-bold text-[#083F2B]">Founding Seller Benefits</h2>
+              <div className="mt-6 space-y-4 text-[#083F2B]">
+                <p>• Priority access before public rollout</p>
+                <p>• Lower processing fees for a launch period</p>
+                <p>• First chance to open a store on the platform</p>
+                <p>• Early exposure through launch marketing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="waitlist" className="mx-auto max-w-4xl px-6 py-20">
+        <div className="rounded-[2rem] bg-white p-8 shadow-2xl ring-1 ring-black/5 md:p-10">
+          <div className="mb-8 text-center">
+            <h2 className="text-3xl font-bold text-[#083F2B] md:text-4xl">Join the Waiting List</h2>
+            <p className="mt-3 text-lg text-[#4A4A4A]">
+              Be one of the first sellers on YardCo Store.
+            </p>
+          </div>
+
+          <form className="grid gap-5 md:grid-cols-2">
+            <input className="rounded-2xl border border-[#D9D9D9] px-4 py-4 outline-none focus:border-[#0F6B4B]" placeholder="Full Name" />
+            <input className="rounded-2xl border border-[#D9D9D9] px-4 py-4 outline-none focus:border-[#0F6B4B]" placeholder="Phone Number" />
+            <input className="rounded-2xl border border-[#D9D9D9] px-4 py-4 outline-none focus:border-[#0F6B4B] md:col-span-2" placeholder="Email Address" />
+            <select className="rounded-2xl border border-[#D9D9D9] px-4 py-4 outline-none focus:border-[#0F6B4B]">
+              <option>Select Seller Type</option>
+              <option>Personal Seller</option>
+              <option>Business Seller</option>
+              <option>Handmade / Local Creator</option>
+            </select>
+            <select className="rounded-2xl border border-[#D9D9D9] px-4 py-4 outline-none focus:border-[#0F6B4B]">
+              <option>How do you want to sell?</option>
+              <option>Online Only</option>
+              <option>In-Store Only</option>
+              <option>Online + In-Store</option>
+            </select>
+            <textarea
+              className="min-h-[120px] rounded-2xl border border-[#D9D9D9] px-4 py-4 outline-none focus:border-[#0F6B4B] md:col-span-2"
+              placeholder="What products do you want to sell?"
+            />
+            <button
+              type="button"
+              className="md:col-span-2 rounded-2xl bg-[#0F6B4B] px-6 py-4 text-base font-semibold text-white shadow-lg transition hover:opacity-95"
+            >
+              Join as a Founding Seller
+            </button>
+          </form>
+
+          <p className="mt-4 text-center text-sm text-[#4A4A4A]">
+            Limited early seller access. Founding seller fee benefits apply for a limited time.
+          </p>
+        </div>
+      </section>
+
+      <footer className="border-t border-black/5 bg-white py-8">
+        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 text-center text-sm text-[#4A4A4A] md:flex-row md:text-left">
+          <p>YardCo Store — Buy. Sell. Verify. Deliver.</p>
+          <p>A second life for great products.</p>
+        </div>
+      </footer>
+    </div>
+  )
+}
